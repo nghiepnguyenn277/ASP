@@ -1,0 +1,34 @@
+﻿@model ASM.Models.Topic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Topic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Topic_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Topic_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Decription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Decription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href='@Url.Action("Edit", "Topics",new { id = Model.Topic_ID })' class="btn btn-primary btn-rounded width-md waves-effect waves-ligh">Edit</a> |
+    <a href='@Url.Action("Index","Topics")' class="btn btn-danger btn-rounded width-md waves-effect waves-light">Back To List </a>
+</p>

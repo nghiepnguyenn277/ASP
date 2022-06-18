@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fea0dafe2c4b429d846f37470d491a54" Name="Diagram1">
+        <EntityTypeShape EntityType="NLNModel.Account" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Cat" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Coure" Width="1.5" PointX="3.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Detail" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Staff" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Student" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Teacher" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NLNModel.Topic" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="NLNModel.FK_Staff_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Students_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Teachers_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Detail_Coures" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Students_Coures" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Detail_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="NLNModel.FK_Teachers_Topic" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

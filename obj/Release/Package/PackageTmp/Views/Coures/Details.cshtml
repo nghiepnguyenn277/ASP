@@ -1,0 +1,58 @@
+﻿@model ASM.Models.Coure
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Coure</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Toeic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Toeic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Decriptoin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Decriptoin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cat_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cat_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Course_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

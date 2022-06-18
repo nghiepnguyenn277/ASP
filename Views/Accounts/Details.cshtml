@@ -1,0 +1,34 @@
+﻿@model ASM.Models.Account
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href='@Url.Action("Edit", "Accounts",new { id = Model.Account_ID })' class="btn btn-primary btn-rounded width-md waves-effect waves-ligh">Edit</a> |
+    <a href='@Url.Action("Index","Accounts")' class="btn btn-danger btn-rounded width-md waves-effect waves-light">Back To List </a>
+</p>
